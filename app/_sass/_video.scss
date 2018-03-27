@@ -1,0 +1,74 @@
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .block_video{
+        background-color: #232323;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .block_container{
+    max-width: 768px;
+    margin: auto;
+    }
+    .block_video.scroll{
+    position: fixed;
+    width: 340px;
+    bottom: 125px;
+    right: 33px;
+    z-index: 999;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 15px 31px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 15px 31px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 15px 31px 5px rgba(0, 0, 0, 0.5);
+    }
+    .block_video.hide{
+        right: -500px;
+    }
+    .caption-video{
+        display: none;
+        width: 100%;
+        background: #fff;
+        color: #333;
+        font-family: Lato;
+        font-size: 12px;
+        padding: 10px 10px 10px 30px;
+        background: url("/img/img-sym-play-black.png") no-repeat 8px center, #fff;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .caption-video.scroll{
+        display: block;
+    }
+    .caption-video span{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 24px;
+        background: #4b4b4b;
+        color: #fff;
+        padding: 4px 10px;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 767px) {
+        .block_video.scroll {
+            bottom: 100px;
+            right: 0px;
+            width: 200px;
+        }
+        .block_video.hide {
+            right: -500px;
+        }
+    }
