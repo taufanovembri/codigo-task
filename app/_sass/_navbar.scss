@@ -1,6 +1,10 @@
 .navbar{
     padding:  0;
 }
+.navbar-toggler {
+    border: none;
+    border-radius: 0;
+}
 .nav-link {
     font-family: Lato;
     font-size: 16px;
@@ -23,7 +27,19 @@
     border-bottom: none;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+@media (max-width: 992px) {
+    .navbar-brand {
+      margin-right: 0;
+      padding: 15px;
+      margin-left: 0;
+    }
+    .login-nav {
+      border: none;
+    }
+    .nav-link {
+      font-family: Lato;
+      font-size: 14px;
+      color: #4b4b4b;
+      padding: 15px 20px !important;
+    }
+  }

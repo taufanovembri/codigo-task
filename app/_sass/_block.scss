@@ -14,6 +14,9 @@
     background: #4b4b4b;
     color:  #fff;
 }
+.block_content {
+    margin-bottom: 100px;
+}
 .block_content p{
     margin-bottom: 10px;
     font-size: 18px;
@@ -132,4 +135,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03023a', end
     .block_progress .block_shared ul {
         margin: auto;
     }
+    .block_progress .block_shared ul {
+        margin: auto;
+      }
+      .block_progress h3 {
+        font-size: 15px;
+        padding: 5px 0;
+        text-align: center;
+      }
+      .block_content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+      .block_video.scroll {
+        bottom: 100px;
+        right: 0px;
+        width: 200px;
+      }
+      .block_video.hide {
+        right: -500px;
+      }
+      .block_popular {
+        max-width: 100%;
+        margin-top: 40px;
+        width: 100%;
+      }
   }
